@@ -16,7 +16,7 @@ function fetchBreeds() {
 
 /**
  * Get cat by breeds from api server
- * @param {*} breedId
+ * @param {Number} breedId
  * @returns promise
  */
 function fetchCatByBreed(breedId) {

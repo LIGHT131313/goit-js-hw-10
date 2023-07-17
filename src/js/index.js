@@ -1,5 +1,5 @@
 import { fetchBreeds, fetchCatByBreed } from './cat-api';
-import { selectCreateMarkUp, createMarkUp } from './mymodule';
+import { selectCreateMarkUp, createMarkUp } from './mymodules';
 import SlimSelect from 'slim-select';
 import 'slim-select/dist/slimselect.css';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
@@ -18,6 +18,9 @@ fetchBreeds()
 
     new SlimSelect({
       select: '#selectElement',
+      settings: {
+        allowDeselect: true,
+      },
     });
 
     refs.select.hidden = false;
